@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script href="main.js"></script>
+    <script src="main2.js" defer></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
@@ -12,8 +12,9 @@
     <main>
       <div id="container">
         <div id="calcDisplay">
-          <div class="userInput">3534</div>
-          <div class="userOutput">4544</div>
+          <div class="previousOperand" data-previousOperand></div>
+
+          <div class="currentOperand" data-currentOperand></div>
         </div>
         <div class="buttonContainer">
           <button type="button" class="clear, button" data-clearButton>
@@ -56,12 +57,8 @@
           >
             0
           </button>
-          <button type="button" class="decimal, button" data-decimalButton>
-            .
-          </button>
-          <button type="button" class="equals, button" data-equalsButton>
-            =
-          </button>
+          <button type="button" class="decimal, button" data-number="">.</button>
+          <button type="button" class="equals, button" data-equalsButton>=</button>
         </div>
       </div>
     </main>
