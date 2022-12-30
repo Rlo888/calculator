@@ -32,22 +32,27 @@ class Calculator {
  
   compute() {
     let computation
-    const prev=parseFloat(this.previousOperand)
-    const current=parseFloat(this.currentOperand)
-    if(isNaN(prev)||isNaN(current))return 
+    let prev=parseFloat(this.previousOperand)
+    let current=parseFloat(this.currentOperand)
+    if(isNaN(prev)||isNaN(current)){alert("You're smarter than that")}
     switch(this.operation){
       case "+":
         computation=prev+current
         break
+
         case "-":
           computation=prev-current
           break
+
           case "*":
             computation=prev*current
             break
+
             case "÷":
+              // if(current=0)
             computation=prev/current
             break
+
             default:
               return
     }
